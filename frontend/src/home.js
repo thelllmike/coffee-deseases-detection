@@ -135,12 +135,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   appbar: {
-    background: '#be6a77',
+    background: '#7BB07B',
     boxShadow: 'none',
     color: 'white'
   },
   loader: {
-    color: '#be6a77 !important',
+    color: '#9AD593 !important',
   }
 }));
 export const ImageUpload = () => {
@@ -213,7 +213,7 @@ export const ImageUpload = () => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            CodeBasics: place detection
+            RP: Coffee Deseases Detection
           </Typography>
           <div className={classes.grow} />
           <Avatar src={cblogo}></Avatar>
@@ -242,7 +242,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a places to predict"}
+                  dropzoneText={"Drag and drop an image of a Desease to predict"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
