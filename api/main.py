@@ -20,8 +20,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("../saved_models/11",compile=False)
-#   model = tf.keras.models.load_model('model/my_model.h5')
+# MODEL = tf.keras.models.load_model("../saved_models/11",compile=False)
+#    MODEL = tf.keras.models.load_model('model/garment.h5')
 
 CLASS_NAMES = ["Normal", "miner", "phoma", "rust"]
 
